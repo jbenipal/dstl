@@ -13,7 +13,7 @@ LinkedList<T>::~LinkedList()
 	{
 		Node<T> *temp = runner;
 		runner = runner->next;
-		free(temp);
+		delete temp;
 	}
 }
 
