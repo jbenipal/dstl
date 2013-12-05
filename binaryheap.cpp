@@ -1,6 +1,6 @@
 #include "binaryheap.h"
 
-template <class T>
+template <typename T>
 void
 BinaryHeap<T>::buildheap(T a[], int size)
 {
@@ -10,7 +10,7 @@ BinaryHeap<T>::buildheap(T a[], int size)
 }
 
 //max heap
-template <class T>
+template <typename T>
 void
 BinaryHeap<T>::heapify(T a[], int i, int heapsize)
 {
@@ -27,7 +27,7 @@ BinaryHeap<T>::heapify(T a[], int i, int heapsize)
 	}
 }
 
-template <class T>
+template <typename T>
 void
 BinaryHeap<T>::heapsort(T a[], int size)
 {

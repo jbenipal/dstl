@@ -1,21 +1,21 @@
 #include "BST.h"
 
-template <class T>
+template <typename T>
 void BST<T>::insert(T item) { 
 	root = insert(item, root);
 }
 
-template <class T>
+template <typename T>
 void BST<T>::deleteitem(T item) { 
 	root = deleteitem(item, root); 
 }
 
-template <class T>
+template <typename T>
 void BST<T>::inorder() {
 	inorder(root);
 }
 
-template <class T>
+template <typename T>
 BinaryNode<T>* BST<T>::insert(T item, BinaryNode<T> *node)
 {
 	if(node==nullptr)
@@ -34,7 +34,7 @@ BinaryNode<T>* BST<T>::insert(T item, BinaryNode<T> *node)
 	return node;
 }
 
-template <class T>
+template <typename T>
 BinaryNode<T>* BST<T>::deleteitem(T item, BinaryNode<T>* node)
 {
 	if(node == nullptr)
@@ -62,7 +62,7 @@ BinaryNode<T>* BST<T>::deleteitem(T item, BinaryNode<T>* node)
 	return node;
 }
 
-template <class T>
+template <typename T>
 BinaryNode<T>* BST<T>::findsmallest(BinaryNode<T> *node)
 {
 	if(node == nullptr)

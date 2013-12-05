@@ -1,7 +1,7 @@
 #include "node.h"
 #include <iostream>
 
-template <class T>
+template <typename T>
 class BST {
 public:
 	BST() : root(nullptr){ }

@@ -154,7 +154,7 @@ void BinaryTree<T>::levelorder()
 	}
 }
 
-template <class T>
+template <typename T>
 void BinaryTree<T>::printpath(BinaryNode<T>* node, T path[], int pathLen)
 {
 	if (node==nullptr) 
@@ -227,7 +227,7 @@ void BinaryTree<T>::printarray(T nodes[], int len)
 	printf("\n");
 }    
 
-template <class T>
+template <typename T>
 BinaryNode<T>* BinaryTree<T>::LCA(BinaryNode<T>* node, int p, int q)
 {
 	if(node == nullptr)

@@ -3,14 +3,14 @@
 
 //in future use #pragma once
 
-template<class U>
+template<typename U>
 struct Node
 {
 	U item;
 	Node<U> *next;
 };
 
-template<class U>
+template<typename U>
 struct BinaryNode {
 	U item;
 	BinaryNode<U> *left;

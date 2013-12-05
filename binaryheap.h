@@ -1,6 +1,6 @@
 #include <iostream>
 
-template <class T>
+template <typename T>
 class BinaryHeap {
 public:
 	void heapsort(T a[], int size);
