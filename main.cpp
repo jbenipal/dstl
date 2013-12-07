@@ -8,6 +8,8 @@
 #include "BST.h"
 #include "hashtable.h"
 
+using namespace dstl;
+
 void testLL() 
 {
     LinkedList<double> n;
