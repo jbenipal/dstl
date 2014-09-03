@@ -20,7 +20,7 @@ namespace dstl {
 
     template<typename T>
     void
-        LinkedList<T>::insert_at_beg(T item)
+        LinkedList<T>::push_front(T item)
     {
             Node<T> *n = new Node<T>();
             n->item = item;
@@ -30,12 +30,12 @@ namespace dstl {
 
     template<typename T>
     void
-        LinkedList<T>::insert_at_end(T item)
+        LinkedList<T>::push_back(T item)
     {
             Node<T> *n = head;
             if (head == nullptr)
             {
-                insert_at_beg(item);
+                push_front(item);
                 return;
             }
             while (n->next != nullptr) n = n->next;

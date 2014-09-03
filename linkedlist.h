@@ -8,8 +8,8 @@ namespace dstl {
     public:
         LinkedList();
         ~LinkedList();
-        void insert_at_beg(T);
-        void insert_at_end(T);
+        void push_front(T);
+        void push_back(T);
         void printlist();
         //void insert_after(Node *node);
     private:
