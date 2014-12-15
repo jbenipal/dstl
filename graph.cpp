@@ -14,8 +14,7 @@ namespace dstl {
         }
     }
 
-    Graph::~Graph()
-    {
+    Graph::~Graph() {
         for (auto &edge : edges_) {
             Edge *p = edge;
             while (p) {

@@ -1,5 +1,6 @@
 #include "edge.h"
 #include <vector>
+
 namespace dstl {
     typedef std::vector<Edge*> AdjacencyList;
 

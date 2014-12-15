@@ -8,8 +8,6 @@
 #include "binaryheap.h"
 #include "BST.h"
 
-using namespace dstl;
-
 void testLL() 
 {
     LinkedList<double> n;
@@ -108,15 +106,15 @@ TEST(GraphTest, WorksCorrectly)
 {
 }
 
-class TestTraversalCallbacks : public Graph::TraversalCallbacks
+class TestTraversalCallbacks : public dstl::Graph::TraversalCallbacks
 {
-    void pre_process_vertex(vertex v) {
+    void pre_process_vertex(dstl::vertex v) {
         std::cout << v << std::endl;
     }
-    void post_process_vertex(vertex v) {
+    void post_process_vertex(dstl::vertex v) {
 
     }
-    void process_edge(vertex from, vertex to){
+    void process_edge(dstl::vertex from, dstl::vertex to){
         std::cout << from << "->" << to << std::endl;
     }
 };

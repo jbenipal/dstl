@@ -1,4 +1,5 @@
 #pragma once
+
 namespace dstl {
     typedef unsigned int vertex;
     typedef int weight;
