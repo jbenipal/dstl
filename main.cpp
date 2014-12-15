@@ -102,6 +102,24 @@ int main()
 #include "gtest/gtest.h"
 #include "hashtable.h"
 #include "trie.h"
+#include "graph.h"
+
+TEST(GraphTest, WorksCorrectly)
+{
+}
+
+class TestTraversalCallbacks : public Graph::TraversalCallbacks
+{
+    void pre_process_vertex(vertex v) {
+        std::cout << v << std::endl;
+    }
+    void post_process_vertex(vertex v) {
+
+    }
+    void process_edge(vertex from, vertex to){
+        std::cout << from << "->" << to << std::endl;
+    }
+};
 
 TEST(TrieTest, WorksCorrectly)
 {
